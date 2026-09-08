@@ -3151,41 +3151,6 @@ function Library:CreateWindow(...)
         Parent = Inner;
     });
 
-    local CloseButton = Library:Create('TextButton', {
-        BackgroundColor3 = Library.BackgroundColor;
-        BorderColor3 = Library.OutlineColor;
-        Position = UDim2.new(1, -22, 0, 3);
-        Size = UDim2.fromOffset(19, 19);
-        Text = 'X';
-        TextColor3 = Library.FontColor;
-        TextSize = 12;
-        Font = Library.Font;
-        ZIndex = 5;
-        Parent = Inner;
-    });
-
-    Library:AddToRegistry(CloseButton, {
-        BackgroundColor3 = 'BackgroundColor';
-        BorderColor3 = 'OutlineColor';
-        TextColor3 = 'FontColor';
-    });
-
-    CloseButton.MouseEnter:Connect(function()
-        CloseButton.BackgroundColor3 = Color3.fromRGB(180, 45, 45);
-    end)
-
-    CloseButton.MouseLeave:Connect(function()
-        CloseButton.BackgroundColor3 = Library.BackgroundColor;
-    end)
-
-    CloseButton.MouseButton1Click:Connect(function()
-        if Config.CloseCallback then
-            task.spawn(Config.CloseCallback)
-        else
-            task.spawn(Library.Unload)
-        end
-    end)
-
 
     local MainSectionOuter = Library:Create('Frame', {
         BackgroundColor3 = Library.BackgroundColor;

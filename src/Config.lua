@@ -8,20 +8,20 @@ local Config = {
     WEAPON_SKINS_ENABLED = true,
 
     -- Knife Customization
-    KNIFE_MODEL = "Butterfly Knife",
-    KNIFE_SKIN = "Special",
+    KNIFE_MODEL = "Default",
+    KNIFE_SKIN = "Stock",
     KNIFE_SKINS = {}, -- [knifeModelName] = "SkinName"
 
     -- Weapon Customization
-    SKIN_MODE = "Special", -- Global fallback: "Special" | "Random"
+    SKIN_MODE = "Stock", -- Global fallback: "Stock" | "Special" | "Random"
     SELECTED_WEAPON_TYPE = "AK-47",
     SELECTED_SKINS = {}, -- [weaponName] = "SkinName" or { Skin = "SkinName", Wear = "Factory New" }
 
     -- Keybinds & UI State
     TOGGLE_UI_KEY = Enum.KeyCode.Insert,
     UNLOAD_KEY = Enum.KeyCode.K,
-    WINDOW_SIZE_X = 440,
-    WINDOW_SIZE_Y = 210,
+    WINDOW_SIZE_X = 520,
+    WINDOW_SIZE_Y = 420,
 
     -- Persistence
     SAVE_FILE = "Bloxstrike_Skinchanger.json"
@@ -33,14 +33,14 @@ function Config.reset()
     Config.ENABLED = true
     Config.KNIFE_SKINS_ENABLED = true
     Config.WEAPON_SKINS_ENABLED = true
-    Config.KNIFE_MODEL = "Butterfly Knife"
-    Config.KNIFE_SKIN = "Special"
+    Config.KNIFE_MODEL = "Default"
+    Config.KNIFE_SKIN = "Stock"
     Config.KNIFE_SKINS = {}
-    Config.SKIN_MODE = "Special"
+    Config.SKIN_MODE = "Stock"
     Config.SELECTED_WEAPON_TYPE = "AK-47"
     Config.SELECTED_SKINS = {}
-    Config.WINDOW_SIZE_X = 440
-    Config.WINDOW_SIZE_Y = 210
+    Config.WINDOW_SIZE_X = 520
+    Config.WINDOW_SIZE_Y = 420
     Config.save()
 end
 
