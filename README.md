@@ -10,10 +10,8 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/euphonee/Seeto.Soluti
 
 ## Previews
 
-<p align="center">
-  <img src="assets/preview1.jpg" width="48%" />
-  <img src="assets/preview2.jpg" width="48%" />
-</p>
+![p1](assets/preview1.jpg)
+![p2](assets/preview2.jpg)
 
 ## Features
 
